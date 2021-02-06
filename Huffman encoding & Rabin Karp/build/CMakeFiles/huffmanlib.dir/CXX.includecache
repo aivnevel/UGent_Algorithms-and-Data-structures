@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/huffman.h
+map
+-
+string
+-
+
+/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/src/huffman.cpp
+huffman.h
+/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/src/huffman.h
+iostream
+-
+memory
+-
+queue
+-
+vector
+-
+stack
+-
+

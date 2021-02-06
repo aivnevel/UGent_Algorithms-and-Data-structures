@@ -1,0 +1,5 @@
+/Users/alexandervannevel/Documents/GevAlTest1-aivnevel/build/CMakeFiles/rebuild_cache.dir
+/Users/alexandervannevel/Documents/GevAlTest1-aivnevel/build/CMakeFiles/edit_cache.dir
+/Users/alexandervannevel/Documents/GevAlTest1-aivnevel/build/CMakeFiles/roodzwart.dir
+/Users/alexandervannevel/Documents/GevAlTest1-aivnevel/build/CMakeFiles/bellmanfordlib.dir
+/Users/alexandervannevel/Documents/GevAlTest1-aivnevel/build/CMakeFiles/bellman_ford.dir

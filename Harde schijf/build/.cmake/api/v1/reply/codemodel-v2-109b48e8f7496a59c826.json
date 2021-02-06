@@ -1,0 +1,68 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "geval_test_demo_project",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "exthash::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-exthash-Debug-d6b366a1d2e67b83a007.json",
+					"name" : "exthash",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "exthashlib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-exthashlib-Debug-a96f317251e512ad9c3f.json",
+					"name" : "exthashlib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/alexandervannevel/Documents/GevAlExamen1-aivnevel/build",
+		"source" : "/Users/alexandervannevel/Documents/GevAlExamen1-aivnevel"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

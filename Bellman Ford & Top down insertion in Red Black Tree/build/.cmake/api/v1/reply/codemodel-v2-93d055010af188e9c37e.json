@@ -1,0 +1,77 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "geval_test_demo_project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "bellman_ford::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bellman_ford-Debug-ec36fa25abae808dacaf.json",
+					"name" : "bellman_ford",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bellmanfordlib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bellmanfordlib-Debug-b7bba78b883ca96c48e4.json",
+					"name" : "bellmanfordlib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roodzwart::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roodzwart-Debug-83ad77b557942395bc75.json",
+					"name" : "roodzwart",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/alexandervannevel/Documents/GevAlTest1-aivnevel/build",
+		"source" : "/Users/alexandervannevel/Documents/GevAlTest1-aivnevel"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

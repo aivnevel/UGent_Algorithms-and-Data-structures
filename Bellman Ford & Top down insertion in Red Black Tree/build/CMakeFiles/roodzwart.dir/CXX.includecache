@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/rzwboom.h
+cassert
+-
+fstream
+-
+sstream
+-
+functional
+-
+iostream
+-
+memory
+-
+
+../include/rzwknoop.h
+rzwboom.h
+../include/rzwboom.h
+
+/Users/alexandervannevel/Documents/GevAlTest1-aivnevel/src/vraag2.cpp
+rzwknoop.h
+/Users/alexandervannevel/Documents/GevAlTest1-aivnevel/src/rzwknoop.h
+

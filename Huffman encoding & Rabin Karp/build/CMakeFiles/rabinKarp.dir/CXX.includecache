@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/src/vraag2.cpp
+string
+-
+queue
+-
+iostream
+-
+vector
+-
+

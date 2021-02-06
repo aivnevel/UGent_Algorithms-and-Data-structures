@@ -1,0 +1,4 @@
+/Users/alexandervannevel/Documents/GevAlExamen1-aivnevel/build/CMakeFiles/rebuild_cache.dir
+/Users/alexandervannevel/Documents/GevAlExamen1-aivnevel/build/CMakeFiles/edit_cache.dir
+/Users/alexandervannevel/Documents/GevAlExamen1-aivnevel/build/CMakeFiles/exthashlib.dir
+/Users/alexandervannevel/Documents/GevAlExamen1-aivnevel/build/CMakeFiles/exthash.dir

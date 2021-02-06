@@ -1,0 +1,77 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "geval_test_demo_project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "huffman::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-huffman-Debug-d7f74afe6ffe474d7e3b.json",
+					"name" : "huffman",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "huffmanlib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-huffmanlib-Debug-cd1b3fe1726a35b281c5.json",
+					"name" : "huffmanlib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rabinKarp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rabinKarp-Debug-8c4c83c8675fb4689903.json",
+					"name" : "rabinKarp",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/build",
+		"source" : "/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

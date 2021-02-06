@@ -1,0 +1,5 @@
+/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/build/CMakeFiles/rabinKarp.dir
+/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/build/CMakeFiles/rebuild_cache.dir
+/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/build/CMakeFiles/edit_cache.dir
+/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/build/CMakeFiles/huffmanlib.dir
+/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/build/CMakeFiles/huffman.dir

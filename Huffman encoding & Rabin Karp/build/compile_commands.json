@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/include  -O0 -fsanitize=address,undefined -fno-omit-frame-pointer -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/rabinKarp.dir/src/vraag2.cpp.o -c /Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/src/vraag2.cpp",
+  "file": "/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/src/vraag2.cpp"
+},
+{
+  "directory": "/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dhuffmanlib_EXPORTS -I/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/include  -O0 -fsanitize=address,undefined -fno-omit-frame-pointer -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -fPIC -std=gnu++17 -o CMakeFiles/huffmanlib.dir/src/huffman.cpp.o -c /Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/src/huffman.cpp",
+  "file": "/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/src/huffman.cpp"
+},
+{
+  "directory": "/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/include  -O0 -fsanitize=address,undefined -fno-omit-frame-pointer -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/huffman.dir/src/vraag1.cpp.o -c /Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/src/vraag1.cpp",
+  "file": "/Users/alexandervannevel/Documents/testalgo/GevAlTest2-aivnevel/src/vraag1.cpp"
+}
+]
