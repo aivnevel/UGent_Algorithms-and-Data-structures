@@ -132,7 +132,7 @@ bool Sudoku::solve(int grid[9][9], int row, int col){
     return false;
 }
 
-private int findNext(int[][] maze, int[] curr, int[] dest) {
+int findNext(int[][] maze, int[] curr, int[] dest) {
     int row = curr[0];
     int col = curr[1];
     int steps = curr[2];
