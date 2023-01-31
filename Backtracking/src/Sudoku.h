@@ -49,55 +49,6 @@ int Sudoku::getUpperLeft(){
     return grid[0][0]*100 + grid[0][1]*10 + grid[0][2];
 }
 
-bool Sudoku::isSolved(){
-    std::bitset<9> present;
-
-    // Check rows
-    for (int row = 0; row < 9; row++){
-        for (int col = 0; col < 9; col++){
-            int value = grid[row][col];
-            if (value < 1 || value > 9 || present[value])
-                return false;
-            present[value] = true;
-        }
-        if (present.count() != 9)
-            return false;
-        present.reset();
-    }
-
-
-    // Check columns
-    for (int col = 0; col < 9; col++){
-        for (int row = 0; row < 9; row++){
-            if (present[grid[row][col]])
-                return false;
-            present[grid[row][col]] = true;
-        }
-        if (present.count() != 9)
-            return false;
-        present.reset();
-    }
-
-
-    // Check squares
-    for (int row = 0; row < 9; row += 3){
-        for (int col = 0; col < 9; col += 3){
-            for (int i=row; i < row+3; i++){
-                for (int j=col; j<col+3; j++){
-                    if (present[grid[i][j]])
-                        return false;
-                present[grid[i][j]] = true;
-                }
-            }
-            if (present.count() != 9)
-                return false;
-            present.reset();
-        }        
-    }
-
-    return true;
-}
-
 /*
 Return the location of the next missing number.
 Both parameters are output parameters.
