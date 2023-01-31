@@ -8,14 +8,14 @@
 class Sudoku{
 public:
     Sudoku(const std::string filename);
-    bool isSolved();
     bool solve();
     int getUpperLeft();
     friend std::ostream& operator<< (std::ostream &out, const Sudoku &s);
 private:
     int grid[9][9];
+    std::bitset<9> present;
     bool solve(int grid[9][9], int row, int col);
-    void findNext(int &row, int &col);
+    void findNext(int &row, int &col, int startRow, int startCol);
 };
 
 std::ostream& operator<< (std::ostream &out, const Sudoku &s){
@@ -115,17 +115,27 @@ void Sudoku::findNext(int &row, int &col){
     }
 }
 
-bool Sudoku::solve(){
-    int row = 0;
-    int col = 0;
-
-    findNext(row, col);
-
-    if (row < 9)
-        return solve(grid, row, col);
-
-    // it was already solved
-    return true;
+bool Sudoku::solve()
+{
+    Cell nextCell = findNext();
+    if (!nextCell.valid)
+    {
+        return true;
+    }
+    
+    for (int num = 1; num <= 9; num++)
+    {
+        if (isSafe(nextCell.row, nextCell.col, num))
+        {
+            board[nextCell.row][nextCell.col] = num;
+            if (solve())
+            {
+                return true;
+            }
+            board[nextCell.row][nextCell.col] = 0;
+        }
+    }
+    return false;
 }
 
 bool Sudoku::solve(int grid[9][9], int row, int col){
@@ -156,31 +166,40 @@ bool Sudoku::solve(int grid[9][9], int row, int col){
         }
 
         if (valid){
-            // Put the number here for now and continue the search
             grid[row][col] = i;
-
-            // Find the location of the next missing number
             int next_row = row;
             int next_col = col;
             findNext(next_row, next_col);
-
-            if (next_row == 9){
-                // No mising numbers ? The sudoku is solved !
+            if (next_row == 9 || solve(grid, next_row, next_col)){
                 return true;
             }
-
-            // Try to solve the remainder
-            if (solve(grid, next_row, next_col)){
-                return true;
-            }
-            // The number was incorrect, reset
-            else{
-                grid[row][col] = 0;
-            }
-        }        
+        }
     }
-    // If we end up here, it was a dead end
+
+    // No solution found
+    grid[row][col] = 0;
     return false;
+}
+
+private int findNext(int[][] maze, int[] curr, int[] dest) {
+    int row = curr[0];
+    int col = curr[1];
+    int steps = curr[2];
+    if (row == dest[0] && col == dest[1])
+        return steps;
+
+    maze[row][col] = 0;
+
+    int[][] dirs = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
+    for (int[] dir : dirs) {
+        int newRow = row + dir[0];
+        int newCol = col + dir[1];
+        if (newRow >= 0 && newRow < maze.length && newCol >= 0 && newCol < maze[0].length && maze[newRow][newCol] == 1) {
+            int[] next = {newRow, newCol, steps + 1};
+            queue.offer(next);
+        }
+    }
+    return Integer.MAX_VALUE;
 }
 
 #endif
